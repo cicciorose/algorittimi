@@ -23,16 +23,18 @@ public class Graph<T> {
 			return addNode(data,-1);
 		}
 		return false;
+		
 	}
 	
 	public boolean addNode(T data,int index){
 		if(nodes.size()>0){
 			Node<T> n=getNode(index);
-			if(n!=null){
+			if(n!=null){ 
 				Node<T> node=new Node<T>(data);
 				if(n.connect(node)){
 					nodes.add(node);
 					return true;
+					
 				}else{
 					System.out.println(n.getData()+" Graph.addNode() "+node.getData());
 				}
