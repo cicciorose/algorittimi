@@ -7,7 +7,7 @@ import java.util.List;
 public class Node<T> {
 		
     private T data;
-    private List<Node<T>> edges;
+    private List<Node<T>> edges ;
     
     
     public Node(){

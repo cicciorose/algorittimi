@@ -23,7 +23,7 @@ public class Graph<T> {
 		if(nodes.size()==0){
 			return addNode(data,-1);
 		}
-		return false;
+		return false ;
 		
 	}
 	
